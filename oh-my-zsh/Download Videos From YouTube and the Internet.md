@@ -41,7 +41,7 @@ If you want to run `youtube-dl` without the `config` options you can pass the `-
 
 If you have `oh-my-zsh` installed you can create global aliases, in which case you can create global aliases to your other config files like:`alias -g config_name='path/to/config_name` and then you can use `config_name` in the terminal or console anywhere you would like to reference that config file, such as with the option `--config-location config_name`.
 
-See a full list of options in the [github repository](https://github.com/ytdl-org/youtube-dl) readme file.
+See a full list of options in the [youtube-dl github repository](https://github.com/ytdl-org/youtube-dl) readme file.
 
 ## Oh-my-zsh Function
 
