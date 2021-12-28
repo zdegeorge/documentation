@@ -102,20 +102,16 @@ source $ZSH/oh-my-zsh.sh
 
 # Used for modifying oh-my-zsh
 alias z='code ~/.zshrc'
+alias -g Z='~/.zshrc'
+alias -g _Z='.zshrc'
 alias sourcez='clear;echo "[oh-my-zsh] Sourcing .zshrc file";location="$(pwd)";source Z;echo "[oh-my-zsh] Has been sourced";cd $location'
 alias -g home='~/'
 
 # Connect to BIGGBY Database Tunnel
-alias db="~/Workspace/environment/db-tunnel.sh"
+alias db="~/Workspace/_environment/db-tunnel.sh"
 
 # Open mySQL CLI 
 alias mysql="mysql -u root -p"
-
-# Alias to PHP Version
-alias php="/usr/local/Cellar/php@7.4/7.4.27/bin/php"
-
-# Serves the current directory to localhost
-alias serve="php -S localhost:2222 ; open localhost:2222"
 
 # Used for quickly zipping directory and deleting zipped file
 alias art="zip -rq artifact.zip ."
@@ -124,15 +120,35 @@ alias unart="rm artifact.zip"
 # Install directory for Brew Packages
 alias Cellar="/usr/local/Cellar"
 
+# Function for quickly serving directory to localhost
+function serve() {
+	echo "[serve] Provided parameters: "$1
+	if [ -z $1 ] || [ $1 = "help" ]
+	then
+		echo "Usage: serve <port #>"
+		echo "Port #: Integer port number 1024-65535"
+		echo "Example: serve 2222"
+		echo "Please provide correct parameters and run again"
+	else
+		echo "[serve] Selected Port #: "$1
+		open -a "Google Chrome" http://localhost:$1
+		php -S localhost:$1
+	fi	
+}
+
 # Function for quickly invalidating CloudFront DNS Cache
 function purgedns() {
 	clear
 	script_location=~/Workspace/dev-tools/invalidate-cloudfront-cache
-	echo "Input parameters: "$1" "$2
+	echo "[purgedns] Provided parameters: "$1" "$2
 	if [ -z $1 ] || [ -z $2 ] || [ $1 = "help" ] 
 	then
-		echo "Provide distribution id and AWS profile as arguments"
-		echo "Example: purgedns ENWCCB4BH8NK6 profile_name"
+		echo "Usage: purgedns <cloudfront id> <profile name>"
+		echo "CloudFront Id: AWS CloudFront Distribution Id"
+		echo "Profile Name: AWS EB CLI Profile Name w/ IAM Credentials"
+		echo "Example: purgedns E2N6NVP4B675NK eb-cli"
+		echo "Set profile in ~/.aws/config file"
+		echo "Please provide correct parameters and run again"
 	else
 		location="$(pwd)"
 		cd $script_location
@@ -140,7 +156,6 @@ function purgedns() {
 		cd $location
 	fi
 }
-
 
 # Function for scraping udemy courses
 function udemy() { 
@@ -217,8 +232,6 @@ function playlist() {
 	cd $location
 }
 
-
-
 # Used for youtube-dl
 alias -g youtube-config='~/.config/youtube-dl/config'
 alias -g udemy-config='~/.config/youtube-dl/config-udemy'
@@ -239,12 +252,6 @@ alias -g ....='../../..'
 alias -g .....='../../../..'
 alias -g L='| less -N -S'
 alias -g atime='ls -ltu'
-alias -g Z='~/.zshrc'
-alias -g _Z='._zshrc'
-
-
-
-
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
