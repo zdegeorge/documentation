@@ -1,4 +1,4 @@
-[Documents](../readme.md) / [oh-my-zsh](oh-my-zsh.md)
+Breadcrumbs: [Documents](../readme.md) / [oh-my-zsh](oh-my-zsh.md)
 
 # Introduction
 
@@ -39,5 +39,7 @@ function serve() {
 ## Usage
 
 You can now use the function by running the command `serve` in any directory and passing the port # you would like to use
+
+## Breadcrumbs
 
 [Documents](../readme.md) / [oh-my-zsh](oh-my-zsh.md)

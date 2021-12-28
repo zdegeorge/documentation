@@ -1,4 +1,4 @@
-[Documents](../readme.md) / [oh-my-zsh](oh-my-zsh.md)
+Breadcrumbs: [Documents](../readme.md) / [oh-my-zsh](oh-my-zsh.md)
 
 # Introduction
 
@@ -98,5 +98,7 @@ function playlist() {
 ## Usage
 
 Now you can use these functions in the command line by calling `youtube` or `playlist` and passing the URL or YouTube identifier for the YouTube item.
+
+## Breadcrumbs
 
 [Documents](../readme.md) / [oh-my-zsh](oh-my-zsh.md)
