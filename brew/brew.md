@@ -1,8 +1,10 @@
-# Brew
+# Introduction
+
+Brew is a package manager for MacOS or Linux
+
+## Useful Packages
 
 These are some common and useful brew packages
-
-## Packages
 
 1.  `node`: Platform built on V8 to build network applications
 2.  `git`: Distributed revision control system
