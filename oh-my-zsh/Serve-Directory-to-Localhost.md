@@ -1,3 +1,5 @@
+[Documents](../readme.md) / [oh-my-zsh](oh-my-zsh.md)
+
 # Introduction
 
 This file uses a `oh-my-zsh` function to allow you to serve a directory to localhost in a simple one line command.
@@ -37,3 +39,5 @@ function serve() {
 ## Usage
 
 You can now use the function by running the command `serve` in any directory and passing the port # you would like to use
+
+[Documents](../readme.md) / [oh-my-zsh](oh-my-zsh.md)

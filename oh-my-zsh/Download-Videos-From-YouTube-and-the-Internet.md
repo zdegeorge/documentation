@@ -1,3 +1,5 @@
+[Documents](../readme.md) / [oh-my-zsh](oh-my-zsh.md)
+
 # Introduction
 
 This file will teach you how to use a package called `youtube-dl` to create a funciton in oh-my-zsh to download videos from YouTube in one command line.
@@ -96,3 +98,5 @@ function playlist() {
 ## Usage
 
 Now you can use these functions in the command line by calling `youtube` or `playlist` and passing the URL or YouTube identifier for the YouTube item.
+
+[Documents](../readme.md) / [oh-my-zsh](oh-my-zsh.md)
