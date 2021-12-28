@@ -14,5 +14,5 @@ Open your `~/.zshrc` file and start customizing your Oh My Zsh.
 
 ## Custom Functions
 
-1.  [Download Videos From YouTube and the Internet](Download-Videos-From-YouTube-and-the_Internet.md)
+1.  [Download Videos From YouTube and the Internet](Download-Videos-From-YouTube-and-the-Internet.md)
 2.  [Serve Directory To Localhost](Serve-Directory-to-Localhost.md)
