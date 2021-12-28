@@ -1,4 +1,4 @@
-Breadcrumbs: [Documents](../readme.md) / [oh-my-zsh](oh-my-zsh.md)
+[Documents](../readme.md) / [oh-my-zsh](oh-my-zsh.md)
 
 # Introduction
 
