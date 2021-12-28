@@ -12,3 +12,9 @@ These are some common and useful brew packages
 6.  `youtube-dl`: Download YouTube videos from the command-line
 7.  `gcc`: GNU compiler collection
 8.  `git-quick-stats`: Simple and efficient way to access statistics in git.
+9.  `ffmpeg`: Play, record, convert, and stream audio and video
+10. `n`: Node version management
+11. `grep`: GNU grep, egrep and fgrep
+12. `you-get`: Dumb downloader that scrapes the web
+13. `mysql`: Open source relational database management system
+14. `curl`: Get a file from an HTTP, HTTPS or FTP server
